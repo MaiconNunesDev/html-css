@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping tags</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: lightgreen;
+        }
+
+        header {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        nav {
+            background-color: rgb(102, 102, 102);
+            padding: 3px;
+            box-shadow: 1px 1px 1px black
+        }
+
+        nav > a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            margin-right: 30px;
+        }
+
+        nav > a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            /*Simplificação do border-radius
+            Quatro valores é referente ao esquerda-cima, esquerda-direita, baico-direita e baixo-esquerda
+            
+            Um valor é referente a todos os lados
+            border-radius: 10px;
+
+            Dois valores, o primerio valor referente a top e bottom, segundo valor referente a right e left
+            */
+            border-radius: 10px 0px 10px 0px;
+            box-shadow: 4px 4px 9px rgba(0, 0, 0, 0.384);
+        }
+
+        article {
+            background-color: lightgray;
+            padding: 5px;
+        }
+
+        article > aside {
+            background-color: rgb(165, 165, 165);
+        }
+
+        footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 1px;
+            margin: 0px;
+        }
+
+        #bola {
+            width: 100px;
+            height: 100px;
+            background-color: white;
+            margin: 10px;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu Site</h1>
+        <nav>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+        </nav>
+    </header>
+    <main>
+        <section id="assuntos">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem perspiciatis eveniet autem cumque dolore adipisci recusandae quisquam reprehenderit error alias, ullam consequatur saepe eos omnis distinctio magni, blanditiis est sunt.</p>
+        </section>
+        <section id="noticias">
+            <article>
+                <h2>Notícia sobre o Brasil</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam, sit rerum blanditiis non culpa unde, officia voluptates suscipit voluptatem magni iste in nihil eveniet repellat possimus nulla reiciendis, odit exercitationem?</p>
+            </article>
+            <aside>
+                <p>Artigo escrito por José da Silva</p>
+            </aside>
+            <article>
+
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>Desenvolvido por maicon Nunes </p>
+    </footer>
+    <div id="bola"></div>
+</body>
+</html>
