@@ -3,15 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Posicionamento fixo de tela</title>
     <style>
         body {
-            background-color: black;
+            /* background-color: black;
             height: 100vh;
             background-image: url('imagens/wallpaper002.jpg');
             background-position: center center;
             background-repeat: repeat;
             background-size: cover;
+            background-attachment: fixed;*/
+
+            /* Shorthand - background
+        color > image > position > reapet > (size) > attachment*/
+
+        background: black url('imagens/pattern002.png') center center no-repeat fixed;
+        background-size: cover
         }
 
         main {
