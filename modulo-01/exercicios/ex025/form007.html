@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+        html {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de Formalário</h1>
+    <form action="cadastro.php" method="post" autocomplete="on">
+        <p>
+            <!--SELECT serve para criar uma seleção no caso uma "lista"
+
+                OPTION serve para indicar as opções da "lista"
+
+                OPTGROUP serve para agrupar os options, e a propriedade label serve para informar o valor do agrupamento
+
+                SELECTED serve para pré-defenir a option
+            -->
+
+            <label for="iest">Estado: </label>
+            <select name="estado" id="iest">
+
+                <option value="" selected>---- Escolha ----</option>
+                <optgroup label="Região Sudeste">
+                    <option value="MG">Minas Gerais</option>
+                    <option value="SP">São Paulo</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                </optgroup>
+
+                <optgroup label="região Nordeste">
+                    <option value="MA">Maranhão</option>
+                    <option value="PEM">Pernambuco</option>
+                    <option value="BH">Bahia</option>
+                </optgroup>
+            </select>
+        </p>
+
+        <p>
+            <!--DATALIST serve para criar uma lista em um input do tipo text 
+            
+                OBS: no INPUT do tipo TEXT a propriedade LIST serve para linkar o DATALIST a caixa de texto
+            
+            -->
+
+            <label for="iprof">Profissão:</label>
+            <input type="text" name="prof" id="iprof" list="lsprof">
+            <datalist id="lsprof">
+                <option>Administrador</option>
+                <option>Contabilista</option>
+                <option>Desenvolvedor</option>
+                <option>Professor</option>
+            </datalist>
+        </p> 
+
+        <p>
+            <!--TEXTAREA serve para area de textos, os valores COLS indica o total de colunas e o ROWS o total de linahs!-->
+
+            <label for="imsg">Mensagem:</label><br>
+            <textarea name="msg" id="imsg" cols="30" rows="10"></textarea>
+        </p>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
